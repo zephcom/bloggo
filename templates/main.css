@@ -1,0 +1,75 @@
+body {
+    max-width: 38rem;
+}
+.padbox {
+    margin: 1rem;
+    font-size: 1rem;
+}
+#nav ul {
+    margin: 0.7rem;
+    padding: 0rem;
+}
+#nav li {
+    list-style-type: none;
+    margin-bottom: 0.7rem;
+}
+#bodywrap {
+    overflow: hidden;
+    display: flex;
+}
+#nav {
+    float: left;
+    width: 5rem;
+    margin: 0.35rem;
+}
+#nav li a, #nav li a:visited {
+    text-decoration: none;
+    color: #555;
+}
+#nav li a:hover {
+    color: #111;
+}
+#article {
+    float: left;
+    width: auto;
+    margin: 0.75rem;
+}
+a, a:visited{
+    text-decoration: none;
+    color: #0645AD;
+}
+a:hover {
+    color: #663366
+}
+#article h1 {
+    margin-bottom: 0.3rem;
+    margin-top: 0rem;
+    font-size: 1.5rem;
+}
+#article p {
+    white-space: pre-wrap;
+    text-align: justify;
+}
+#hr {
+    border-bottom: 0.14rem solid #777;
+    width: auto;
+}
+#vr {
+    border-left: 0.14rem solid #777;
+    display: flex;
+    margin-top: 0.89rem;
+    margin-bottom: 0.84rem;
+}
+footer#bottom p#copy {
+    margin: 0rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+footer#bottom ul#contact {
+    list-style-type: none;
+    margin: 0rem;
+    padding: 0rem;
+}
+footer#bottom ul#contact li {
+    display: inline;
+}

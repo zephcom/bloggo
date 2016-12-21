@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header class="padbox">
+		<h1>The blog with rocks in</h1>
+	</header>
+	<div id="hr"></div>
+	<div id="bodywrap">
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">start</a></li>
+				<li><a href="archive.html">posts</a></li>
+				<li><a href="tags.html">tags</a></li>
+				<li><a href="about.html">about</a></li>
+			</ul>
+		</div>
+		<div id="vr"></div>
+		<div id="article">
+			<div id="archive">
+				<ul>
+				{% for item in post|reverse() %}
+					<li><a href="{{ item['filename'] }}.html">{{ item['title'] }}</a><div class="date">{{ item['date'] }}</div></li>
+				{% endfor %}
+				<ul>
+			</div>
+			</footer>
+		</div>
+	</div>
+	<div id="hr"></div>
+	<footer class="padbox" id="bottom">
+		<p id="copy">© 2016 Erik Sandström</p>
+		<ul id="contact">
+			<li><a href="mailto:erik@kyriasis.com">Email</a></li>
+			<li><a href="http://twitter.com/zephcom">Twitter</a></li>
+		</ul>
+	</footer>
+</body>
