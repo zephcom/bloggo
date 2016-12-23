@@ -29,6 +29,20 @@ body {
 #nav li a:hover {
     color: #111;
 }
+#underline {
+	text-decoration: underline;
+}
+#archive li {
+	list-style-type: none;
+}
+#archive li a, #archive li a:visited{
+	text-decoration: none;
+}
+.date {
+	display: inline;
+	padding-left: 4em;
+	float: right;
+}
 #article {
     float: left;
     width: auto;
